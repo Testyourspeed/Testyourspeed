@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Algebra Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Webpage</h1>
-    </header>
-    <main>
-        <p>Click the button below to change the background color:</p>
-        <button id="colorButton">Change Background Color</button>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mohamed Baba</p>
-    </footer>
+    <div class="quiz-container">
+        <div class="timer-bar"></div>
+        <div class="quiz-header">
+            <div class="round-info">Round <span id="currentRound">1</span></div>
+            <div class="score-panel">
+                <div class="round-score">Correct: <span id="roundScore">0</span>/5</div>
+                <div class="time-score">Points: <span id="timeScore">0</span></div>
+            </div>
+            <div class="timer-display">60</div>
+        </div>
+        <div class="progress-indicator">
+            <div class="progress-dot active"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+        </div>
+        <div class="question-container">
+            <p class="question"></p>
+            <div class="options"></div>
+        </div>
+        <div class="feedback"></div>
+        <div class="final-scores"></div>
+        <button class="start-quiz">Start Quiz</button>
+        <button class="next-round">Next Round</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
