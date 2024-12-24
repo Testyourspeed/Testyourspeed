@@ -125,3 +125,20 @@ body {
         font-size: 1rem;
     }
 }
+.return-homepage {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.return-homepage:hover {
+    background: darken(var(--secondary-color), 10%);
+}
