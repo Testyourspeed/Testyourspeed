@@ -125,20 +125,23 @@ body {
         font-size: 1rem;
     }
 }
-.return-homepage {
-    display: inline-block;
-    background: var(--secondary-color);
+.return-home-btn {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    padding: 12px;
+    background-color: #28a745; /* Changed to green */
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto 20px auto;
     text-align: center;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.return-homepage:hover {
-    background: darken(var(--secondary-color), 10%);
+.return-home-btn:hover {
+    background-color: #218838; /* Changed to a darker green */
 }
